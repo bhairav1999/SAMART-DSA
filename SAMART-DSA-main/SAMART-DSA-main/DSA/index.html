@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DSA</title>
+</head>
+
+<body>
+  <script>
+    // find duplicate Element in array
+
+    // const array= [1,2,5,2,6,8,9]
+    // const newArray=new Set(array)
+    // console.log(newArray)
+
+    // 2nd way
+    // const array= [1,2,5,2,6,8,9]
+    // const newArray =array.filter((elm,index,arry)=>arry.indexOf(elm)!==index)
+    // console.log(newArray)  // output 2
+  </script>
+
+  <script>
+    // how to find min and max number in given array
+
+    // const array= [1,2,5,2,6,8,9]
+    // const newarray = array.reduce((pre , cur)=>{
+    //     console.log(pre , cur)
+    //     return pre<cur?pre:cur
+    // })
+    // console.log(newarray)
+
+    // 2nd way
+    //   const array = [1, 2, 5, 2, 6, 8, 9];
+    //   const newMaxArray = Math.max(...array);
+    //   console.log(newMaxArray);
+    //   const newMinArray = Math.min(...array);
+    //   console.log(newMinArray);
+  </script>
+
+  <script>
+    //   how to find second largest value in given array
+
+    //   let array = [1, 2, 5, 2, 6, 8, 9];
+    //   let newArray = Math.max(...array);
+    //   let index = array.indexOf(newArray);
+    //   array.splice(index, 1);
+    //   let secondLargest = Math.max(...array);
+    //   console.log(secondLargest);
+  </script>
+
+  <script>
+    // find missing value in array
+
+    // const array = [1, 2, 4, 7, 8, 9];
+    // const missingarry = [];
+    // const missArray = (arr) => {
+    //   const maxValue = Math.max(...arr);
+    //   const minValue = Math.min(...arr);
+    //   for (let i = minValue; i < maxValue; i++) {
+    //    if(arr.indexOf(i) < 0){
+    //     missingarry.push(i)
+    //    }
+    //   }
+    //   return missingarry
+    // };
+    // console.log(missArray(array));
+  </script>
+
+  <script>
+    // find even and odd number
+
+    // const arry = [1,5,6,8,9,21,5,2,6,6]
+    // const even= arry.filter((item)=>{
+    //   return item%2===0
+    // })
+    // const odd= arry.filter((item)=>{
+    //   return item%2!==0
+    // })
+    // console.log(even)
+    // console.log(odd)
+
+    // 2nd way
+    // const arry = [1,5,6,8,9,21,5,2,6,6]
+    // for(let i=1; i<=10; i++){
+    //   if(i%2===0){
+    //     console.log(i)
+    //   }
+    // }
+
+    // 3rd way
+    //   const arry = [1, 5, 6, 8, 9, 21, 5, 2, 6, 6];
+    // const even = [];
+    // const odd = [];
+
+    // for (let i = 0; i < arry.length; i++) {
+    //   if (arry[i] % 2 === 0) {
+    //     even.push(arry[i]);
+    //   } else {
+    //     odd.push(arry[i]);
+    //   }
+    // }
+
+    // console.log(even);
+    // console.log(odd);
+  </script>
+
+  <script>
+    // find the sum of all elements
+    // const arry = [1, 5, 6, 8, 9, 21, 5, 2, 6, 6,100];
+    // const sumElm= arry.reduce((pre, cur)=>{
+    //   return pre+cur
+    // })
+    // console.log(sumElm)
+
+    // 2nd way
+    // const arry = [1, 5, 6, 8, 9, 21, 5, 2, 6, 6];
+    // let sum = 0;
+
+    // for (let i = 0; i < arry.length; i++) {
+    //   sum += arry[i];
+    // }
+    // console.log(sum);
+  </script>
+
+  <script>
+    // find the factorial number
+
+    // const inputNum = prompt("please enter number");
+    // var fact = 1;
+    // if (inputNum < 0) {
+    //   console.log(`factorial number of ${inputNum} is not possible`);
+    // } else {
+    //   for (let i = 1; i <= inputNum; i++) {
+    //     fact = fact * i;
+    //   }
+    //   console.log(`factorial number of ${inputNum} is ${fact}`);
+    // }
+  </script>
+
+
+  <script>
+    // find prime number
+
+    const primeNumber = prompt("enter")
+    const isprime = true
+    if (primeNumber <= 1) {
+      console.log(`prime number of ${primeNumber} `)
+      isprime = false
+
+    }
+    else {
+      for (let index = 2; index <= Math.sqrt(primeNumber); index++) {
+
+        if (primeNumber % index == 0) {
+          console.log(`${primeNumber} is not a prime number`)
+          isprime = false
+          break;
+        }
+
+
+      }
+
+    }
+
+    if (isprime) {
+      console.log(primeNumber + "is primenumber")
+    } else {
+      console.log(primeNumber + "is not primenumber")
+    }
+
+
+  </script>
+
+</body>
+
+</html>
